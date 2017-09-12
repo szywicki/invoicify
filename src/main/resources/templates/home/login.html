@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body>
+
+<form method="post" action="/loginalot">
+<h1>user name</h1>
+<input type="text" name="username">
+
+<h1>password</h1>
+<input type="password" name="password">
+<button>Try to get past me</button>
+
+<input type="hidden" name="{{ _csrf.parameterName }}" value="{{_csrf.token }}">
+</form>
+
+</body>
+</html>
